@@ -1,9 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <script>
+
             // var = Váriavel global
             // let = variavel no escopo
             // const = constante
@@ -27,6 +22,3 @@
 
             var bool =  true
             
-        </script>
-    </body>
-</html>
