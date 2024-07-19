@@ -1,9 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/JavaScript/Lógica de programação e exercicios/Style.css">
-    </head>
-    <body>
-        <script>
+
             class Animal{
                 constructor(nome){
                     this.nome = nome
@@ -29,6 +24,4 @@
             alert(cachorro.printNome())
             alert(cachorro.printRaca())
 
-        </script>
-    </body>
-</html>
+ 

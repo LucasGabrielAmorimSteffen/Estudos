@@ -1,9 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/JavaScript/Lógica de programação e exercicios/Style.css">
-    </head>
-    <body>
-        <script>
+
             var objetos = [{
                 'nome':'Lucas',
                 'idade':'17',
@@ -23,6 +18,3 @@
             }]
 
             console.log(noticias[0].titulo)
-        </script>
-    </body>
-</html>
