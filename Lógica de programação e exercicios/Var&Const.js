@@ -1,13 +1,8 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <script>
+
             // var = Váriavel global
             // let = variavel no escopo
             // const = constante
-            /*
+            
             var nome = 'Lucas'
             console.log(nome) // Exemplo de variavel global
 
@@ -19,14 +14,10 @@
             const nome = 'Lucas';
             console.log(nome)
 
-            */
+            
 
             var numero = 17;
             var nome = 'Lucas';
             var nome2 = 'Gabriel';
 
             var bool =  true
-            
-        </script>
-    </body>
-</html>

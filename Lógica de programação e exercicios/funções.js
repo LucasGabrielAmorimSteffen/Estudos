@@ -1,9 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <script>
+
             function testes (){
                 // executado quando chamar a função.
                 console.log("Chamando a função")
@@ -25,8 +20,3 @@
         var nome = PegarNome(2);
 
         console.log(nome)
-
-
-        </script>
-    </body>
-</html>

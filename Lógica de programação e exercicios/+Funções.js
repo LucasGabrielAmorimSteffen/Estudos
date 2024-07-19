@@ -1,9 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <script>
+
             /*
             var func = function(){
                 alert("Olá Mundo!");
@@ -12,6 +7,3 @@
             (function(){
                 alert("Hello World");
             })();
-        </script>
-    </body>
-</html>

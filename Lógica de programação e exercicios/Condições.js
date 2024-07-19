@@ -1,9 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <script>
+
             // Condições
 
             var numero = 17;
@@ -32,6 +27,3 @@
         // && - E
         // || - Ou 
         
-        </script>
-    </body>
-</html>

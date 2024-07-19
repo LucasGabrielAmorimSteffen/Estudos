@@ -1,9 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <script>
+
             /*
             var N = 0;
             while(N < 10){
@@ -22,6 +17,3 @@
                         console.log(n)
                         n++;
                     }while(n < 10)
-        </script>
-    </body>
-</html>

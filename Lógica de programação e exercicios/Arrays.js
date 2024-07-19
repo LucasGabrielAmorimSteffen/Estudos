@@ -1,9 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <script>
+
             //Arrays
 
             var nomes = ['lucas', 'gabriel', 'amorim', 'steffen']
@@ -13,6 +8,3 @@
 
             console.log(nomes[4])
             console.log(nomes[0])
-        </script>
-    </body>
-</html>
