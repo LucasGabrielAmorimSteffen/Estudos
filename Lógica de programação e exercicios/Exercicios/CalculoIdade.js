@@ -1,9 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/Style.css">
-    </head>
-    <body>
-        <script>
+
             var AnoNascimento = prompt("Por favor, informe o ano do seu nascimento");
 
             while(AnoNascimento >= 2024){
@@ -16,6 +11,3 @@
             var IdadeFinal = AnoAtual - AnoNascimento;
 
             alert('A sua idade é: '+IdadeFinal)
-        </script>
-    </body>
-</html>
