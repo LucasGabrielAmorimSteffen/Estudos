@@ -58,14 +58,43 @@
 
 ## Tudo sobre variáveis
 
-* VAR
-* LET
-* CONST
-* Declaração de Variáveis.
-* Hoisting
-* Regras de nomes variáveis
-* Variable Scopes
-* Block
-* Function
-* Global
+##### VAR:
+* var é a maneira de declaração de variável global(se for declarada fora de qualquer função).
+##### LET: 
+* let é a maneira de declaração de variável dentro de um escopo, se for declarado como let, só vai ser acessível dentro do blcoo onde foi declarada.
+##### CONST:
+* const é a meneira de declaração de variável constante cujo valor não pode ser alterado após a atribuição inicial(Ela também tem escopo de bloco.).
+##### Declaração de Variáveis.
+* var idade = 30;
+* let nome = "Lucas";
+* const PI = 3.14;
+##### Hoisting
+* É um comportamento em JavaScript onde declarações de variáveis e funções são movidas para o topo de seus escopos durante a fase de compilação, permitindo que sejam utilizadas antes de serem declaradas explicitamente no código.
+
+* Exemplo:<br>
+console.log(nome); // undefined <br> 
+var nome = "Lucas";
+
+##### Regras de nomes variáveis
+* Começo: Deve começar com uma letra (a a z ou A a Z), cifrão ($) ou sublinhado (_) Não pode começar com números..
+
+* Caracteres subsequentes: Podem conter letras, números, cifrões ou sublinhados.
+
+* Espaços: Não são permitidos.
+
+* Case-sensitive: Diferencia maiúsculas de minúsculas (ex: nome é diferente de Nome).
+
+
+##### Variable Scopes
+* Global: Variáveis declaradas fora de qualquer função ou bloco são globais e podem ser acessadas de qualquer lugar no código.
+
+* Function: Variáveis declaradas dentro de uma função são locais àquela função e não são acessíveis fora dela, a menos que sejam retornadas ou usadas em closures.
+
+* Block: Variáveis declaradas com let ou const têm escopo de bloco, ou seja, são acessíveis apenas dentro do bloco onde foram declaradas (um par de chaves {}).
+
+##### Block Scope: Variáveis declaradas com let e const têm escopo restrito ao bloco em que são definidas.
+
+##### Function Scope: Variáveis declaradas com var têm escopo dentro da função onde são declaradas.
+
+##### Global Scope: Variáveis declaradas fora de qualquer função têm escopo global e são acessíveis em todo o código
 
