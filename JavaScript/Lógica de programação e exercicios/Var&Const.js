@@ -11,8 +11,8 @@
                 console.log(idade)
             }
 
-            const nome = 'Lucas';
-            console.log(nome)
+            //const nome = 'Lucas';
+            //console.log(nome)
 
             
 
