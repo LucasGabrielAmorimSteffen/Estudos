@@ -1,17 +1,20 @@
 # Data Types
+## Primitive Types, o que são?
+
+### Tipos primitivos são categorias básicas de dados que são diretamente manipuláveis pelo interpretador da linguagem.
 
 ## Primitive Types:
 
-### String
+* String: Representa sequências de caracteres, como texto. Strings são definidas entre aspas simples ('') ou duplas ("").
 
-### Undefined
+* Undefined: Indica que uma variável foi declarada, mas ainda não foi atribuída com um valor. Em termos simples, é usado quando não há um valor real atribuído à variável.
 
-### Number
+* Number: Representa números, incluindo inteiros e números de ponto flutuante. Em JavaScript, todos os números são tratados como números de ponto flutuante.
 
-### Bigint
+* BigInt: Um tipo numérico especial que permite representar números inteiros maiores do que o limite seguro do tipo Number. É declarado adicionando um sufixo 'n' ao final de um número, como 123n.
 
-### Boolean
+* Boolean: Representa um valor lógico que pode ser true (verdadeiro) ou false (falso). É comumente usado para controle de fluxo e lógica condicional.
 
-### Null
+* Null: Indica a ausência intencional de qualquer valor ou objeto. É atribuído explicitamente a uma variável para indicar que ela não possui nenhum valor válido ou referência.
 
-### Symbol
+### Object
