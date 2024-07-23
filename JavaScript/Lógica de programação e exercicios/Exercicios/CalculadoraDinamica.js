@@ -1,10 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/Style.css">
-    </head>
-    <body>
-        <script>
-            // Aplicação calculadora Dinâmica.
+           // Aplicação calculadora Dinâmica.
 
             //Queremos um número Inicial
             //Queremos um sinal (tipo de operação)
@@ -38,6 +32,3 @@
             }
 
             alert("O resultado das somas é: "+Resultado)
-        </script>
-    </body>
-</html>
