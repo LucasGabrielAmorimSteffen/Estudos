@@ -17,4 +17,16 @@
 
 * Null: Indica a ausência intencional de qualquer valor ou objeto. É atribuído explicitamente a uma variável para indicar que ela não possui nenhum valor válido ou referência.
 
-### Object
+## Object
+
+### Typeof Operator
+
+#### O typeof operator retorna uma string indicando o tipo do operador. Ex:
+* typeof 42; // "number"
+* typeof "Hello"; // "string"
+* typeof true; // "boolean"
+* typeof undefined; // "undefined"
+* typeof null; // "object" (polêmico, deveria ser "nulo", mas * retorna "objeto" devido a um bug histórico)
+* typeof {}; // "object"
+* typeof []; // "object" (arrays são tecnicamente objetos no JavaScript)
+* typeof function(){}; // "function"
