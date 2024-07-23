@@ -4,7 +4,7 @@
 
   ### O que é JavaScript?
 
-* JavaScript é uma linguagem de programação de alto nível, criado em 1996 pelo programadro Brandon Eich.
+* JavaScript é uma linguagem de programação de alto nível, criado em 1996 pelo programador Brandon Eich.
 * JavaScript não é Java.
 * JavaScript é utilizado para desenvolver aplicações, sistemas e serviçõs de alta complexidade.
 
@@ -31,7 +31,7 @@
 
 ## História do JavaScript
 
-* JavaScript foi criado por um programdaor chamado Brendan Eich em 1985
+* JavaScript foi criado por um programador chamado Brendan Eich em 1985
 
 * JavaScript VS Java:
 * JavaScript não tem uma relação direta com a linguagem de programação Java, o nome foi dado devido a uma jogada de marketing, por conta da linguagem Java ser uma das mais populares na epóca.Enquanto o Java era muito utilizado no desenvolvimento Desktop, enquanto o JavaScript estaria surgindo para o desenvolvimento mobile.
