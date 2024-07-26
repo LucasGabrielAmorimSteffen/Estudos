@@ -1,0 +1,71 @@
+<html>
+    <body>
+        <script>
+            // Solicite ao usuário que informe quatro números naturais e calcule:
+           // a) A média aritmética simples;
+          // b) A média ponderada com os respectivos pesos: 1, 2, 3, 4;
+         // c) A mediana.
+
+
+         var number1 = prompt("Digite o primeiro número")
+         var number2 = prompt("Digite o segundo número")
+         var number3 = prompt("Digite o terceiro número")
+         var number4 = prompt("Digite o ultimo número")
+
+         console.log(number1,number2,number3,number4)
+
+         alert("Os números informados são "+number1+','+number2+','+number3+','+number4)
+         
+         var soma = 0;
+         var totalSoma = 0;
+
+         number1 = parseInt(number1);
+         number2 = parseInt(number2);
+         number3 = parseInt(number3);
+         number4 = parseInt(number4);
+         soma = parseFloat(soma);
+         totalSoma = parseFloat(totalSoma);
+
+         soma = number1+number2+number3+number4
+
+         totalSoma = soma / 4
+
+         console.log(totalSoma)
+
+         alert('Agora começaremos a calcular os lados de um triângulo')
+         if(number1 == number2 && number2 == number3){
+            console.log("A soma dos números informados montam um triângulo equilátero")
+            alert("As medidas de "+number1+','+number2+','+number3+' formam um triângulo equilátero')
+         }else if(number1 != number2 && number2 != number3 && number1 != number3){
+            console.log("A soma dos números informados montam um triângulo escaleno")
+            alert("As medidas de "+number1+','+number2+','+number3+' formam um triângulo escaleno, por possuir todos os lados diferentes')
+         }
+
+         alert("Agora começaremos a calcular a mediana dos números digitados")
+
+         var medianaNumerica1 = 0;
+         var medianaNumerica2 = 0;
+         var medianaNumerica3 = 0;
+         var medianaNumerica4 = 0;
+         var medianaAuxiliar = 0;
+
+         medianaNumerica1 = parseInt(medianaNumerica1);
+         medianaNumerica2 = parseInt(medianaNumerica2);
+         medianaNumerica3 = parseInt(medianaNumerica3);
+         medianaNumerica4 = parseInt(medianaNumerica4);
+         medianaAuxiliar = parseFloat(medianaAuxiliar);
+
+         if(medianaNumerica1 > medianaNumerica2){
+            medianaAuxiliar = medianaNumerica2
+            medianaNumerica2 = medianaNumerica1
+            medianaNumerica1 = medianaAuxiliar
+         }
+
+         console.log(medianaNumerica1);
+         console.log(medianaNumerica2);
+         console.log(medianaNumerica3);
+         console.log(medianaNumerica4);
+         console.log(medianaAuxiliar);
+        </script>
+    </body>
+</html>
