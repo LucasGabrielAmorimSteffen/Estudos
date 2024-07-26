@@ -7,7 +7,7 @@
          // c) A mediana.
 
 
-         var number1 = prompt("Digite o primeiro número")
+         /*var number1 = prompt("Digite o primeiro número")
          var number2 = prompt("Digite o segundo número")
          var number3 = prompt("Digite o terceiro número")
          var number4 = prompt("Digite o ultimo número")
@@ -41,31 +41,53 @@
             alert("As medidas de "+number1+','+number2+','+number3+' formam um triângulo escaleno, por possuir todos os lados diferentes')
          }
 
-         alert("Agora começaremos a calcular a mediana dos números digitados")
+         alert("Agora começaremos a calcular a mediana dos números digitados")*/
 
-         var medianaNumerica1 = 0;
-         var medianaNumerica2 = 0;
-         var medianaNumerica3 = 0;
-         var medianaNumerica4 = 0;
-         var medianaAuxiliar = 0;
+         var mn1 = 50;
+         var mn2 = 40;
+         var mn3 = 30;
+         var mn4 = 20;
+         var aux = undefined;
+         var somaTotalMediana = undefined;
 
-         medianaNumerica1 = parseInt(medianaNumerica1);
-         medianaNumerica2 = parseInt(medianaNumerica2);
-         medianaNumerica3 = parseInt(medianaNumerica3);
-         medianaNumerica4 = parseInt(medianaNumerica4);
-         medianaAuxiliar = parseFloat(medianaAuxiliar);
+         mn1 = parseInt(mn1);
+         mn2 = parseInt(mn2);
+         mn3 = parseInt(mn3);
+         mn4 = parseInt(mn4);
+         aux = parseFloat(aux);
+         somaTotalMediana = parseFloat(somaTotalMediana)
 
-         if(medianaNumerica1 > medianaNumerica2){
-            medianaAuxiliar = medianaNumerica2
-            medianaNumerica2 = medianaNumerica1
-            medianaNumerica1 = medianaAuxiliar
+         if(mn1 > mn2){
+            aux = mn2
+            mn2 = mn1
+            mn1 = aux
+         }else if(mn1 > mn3){
+            aux = undefined;
+            aux = mn3
+            mn3 = mn1
+            mn1 = aux
+         }else if(mn2 > mn3){
+            aux = mn3
+            mn3 = mn2
+            mn2 = aux
+         }else if(mn2 > mn4){
+            aux = mn4
+            mn4 = mn2
+            mn2 = aux
+         }else if(mn3 > mn4){
+            aux = mn4
+            mn4 = mn3
+            mn3 = aux
          }
 
-         console.log(medianaNumerica1);
-         console.log(medianaNumerica2);
-         console.log(medianaNumerica3);
-         console.log(medianaNumerica4);
-         console.log(medianaAuxiliar);
+         ///somaTotalMediana = (mn2+mn3)/2
+         //alert("A soma total das medianas são de: "+somaTotalMediana)
+
+         console.log(mn1)
+         console.log(mn2)
+         console.log(mn3)
+         console.log(mn4)
+         console.log(aux)
         </script>
     </body>
 </html>
