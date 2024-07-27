@@ -7,7 +7,7 @@
          // c) A mediana.
 
 
-         /*var number1 = prompt("Digite o primeiro número")
+         var number1 = prompt("Digite o primeiro número")
          var number2 = prompt("Digite o segundo número")
          var number3 = prompt("Digite o terceiro número")
          var number4 = prompt("Digite o ultimo número")
@@ -41,53 +41,57 @@
             alert("As medidas de "+number1+','+number2+','+number3+' formam um triângulo escaleno, por possuir todos os lados diferentes')
          }
 
-         alert("Agora começaremos a calcular a mediana dos números digitados")*/
+         alert("Agora começaremos a calcular a mediana dos números digitados")
 
-         var mn1 = 50;
-         var mn2 = 40;
-         var mn3 = 30;
-         var mn4 = 20;
-         var aux = undefined;
+         let mn1 = number1;
+         let mn2 = number2;
+         let mn3 = number3;
+         let mn4 = number4;
          var somaTotalMediana = undefined;
 
          mn1 = parseInt(mn1);
          mn2 = parseInt(mn2);
          mn3 = parseInt(mn3);
          mn4 = parseInt(mn4);
-         aux = parseFloat(aux);
          somaTotalMediana = parseFloat(somaTotalMediana)
+         
+         let valores = [mn1, mn2, mn3, mn4];
+         
+         valores.sort((a, b) => a - b);
+         
+         [mn1, mn2, mn3, mn4] = valores;
 
-         if(mn1 > mn2){
-            aux = mn2
-            mn2 = mn1
-            mn1 = aux
-         }else if(mn1 > mn3){
-            aux = undefined;
-            aux = mn3
-            mn3 = mn1
-            mn1 = aux
-         }else if(mn2 > mn3){
-            aux = mn3
-            mn3 = mn2
-            mn2 = aux
-         }else if(mn2 > mn4){
-            aux = mn4
-            mn4 = mn2
-            mn2 = aux
-         }else if(mn3 > mn4){
-            aux = mn4
-            mn4 = mn3
-            mn3 = aux
-         }
+         somaTotalMediana = (mn2+mn3)/2
+         alert("A soma total das medianas são de: "+somaTotalMediana)
+         console.log("A soma das medianas é: "+somaTotalMediana)
+         console.log("Estão sendo utilizados para montar o calculo os valores: "+mn2+"+"+mn3+"/"+2)
 
-         ///somaTotalMediana = (mn2+mn3)/2
-         //alert("A soma total das medianas são de: "+somaTotalMediana)
+         console.log('O valor informado da primeira mediana é: '+mn1)
+         console.log('O valor informado da segunda mediana é: '+mn2)
+         console.log('O valor informado da terceira mediana é: '+mn3)
+         console.log('O valor informado da ultima mediana é: '+mn4)
 
-         console.log(mn1)
-         console.log(mn2)
-         console.log(mn3)
-         console.log(mn4)
-         console.log(aux)
+         alert("Começaremos agora a calcular a média ponderada com os respectivos pesos 1,2,3,4.")
+         var nt1 = prompt('Digite o valor da primeira nota: ')
+         var nt2 = prompt('Digite o valor da segunda nota:')
+         var nt3 = prompt("Digite o valor da terceira nota:")
+         var nt4 = prompt("Digite o valor da quarta nota:")
+
+         var p1 = 1;
+         var p2 = 2;
+         var p3 = 3;
+         var p4 = 4;
+         var mp = undefined;
+
+         console.log("O valor da primeira nota é:"+nt1)
+         console.log("O valor da segunda nota é:"+nt2)
+         console.log("O valor da terceira nota é:"+nt3)
+         console.log("O valor da quarta nota é:"+nt4)
+
+         mp = (nt1*p1+nt2*p2+nt3*p3+nt4*p4)/(p1+p2+p3+p4)
+
+         console.log("O Resultado final da média ponderada é: "+mp)
+         alert("A media ponderada é de: "+mp)
         </script>
     </body>
 </html>
