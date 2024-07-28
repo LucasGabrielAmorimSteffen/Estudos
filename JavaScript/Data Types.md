@@ -29,4 +29,4 @@
 * typeof null; // "object" (polêmico, deveria ser "nulo", mas * retorna "objeto" devido a um bug histórico)
 * typeof {}; // "object"
 * typeof []; // "object" (arrays são tecnicamente objetos no JavaScript)
-* typeof function(){}; // "function"
+* typeof function(){}; // "function"\
