@@ -1,4 +1,5 @@
-const pessoa = {
+// Pessoa
+/* const pessoa = {
     'nome':'Lucas',
     'idade':'17',
     'endereco':{
@@ -38,4 +39,23 @@ console.log(carro.descricao)
 
 
 delete carro.ano
-console.log(carro.ano)
+console.log(carro.ano)*/ 
+
+const me = {
+    'FavoriteFood':'My favorite food is Pasta',
+    'Profession':'im Helpdesk',
+    'Name':'My name is Lucas Gabriel Amorim Steffen',
+    'Age':'I has 17 years old',
+    'Address':{
+        'Road':'Seringueiras',
+        'Number':'1200',
+        'Neighborhood':'Botânico',
+        'City':'Sinop',
+        'State':'Mato Grosso',
+        'Country':'Brasil'
+    },
+    'Dream':'Work on Microsoft at programming'
+}
+
+//console.log(me.FavoriteFood, me.Address)
+console.log(`My dream is ${me.Dream}`)

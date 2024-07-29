@@ -70,17 +70,17 @@
          console.log('O valor informado da segunda mediana é: '+mn2)
          console.log('O valor informado da terceira mediana é: '+mn3)
          console.log('O valor informado da ultima mediana é: '+mn4)
-
+         {
          alert("Começaremos agora a calcular a média ponderada com os respectivos pesos 1,2,3,4.")
-         var nt1 = prompt('Digite o valor da primeira nota: ')
-         var nt2 = prompt('Digite o valor da segunda nota:')
-         var nt3 = prompt("Digite o valor da terceira nota:")
-         var nt4 = prompt("Digite o valor da quarta nota:")
+         let nt1 = prompt('Digite o valor da primeira nota: ')
+         let nt2 = prompt('Digite o valor da segunda nota:')
+         let nt3 = prompt("Digite o valor da terceira nota:")
+         let nt4 = prompt("Digite o valor da quarta nota:")
 
-         var p1 = 1;
-         var p2 = 2;
-         var p3 = 3;
-         var p4 = 4;
+         let p1 = 1;
+         let p2 = 2;
+         let p3 = 3;
+         let p4 = 4;
          var mp = undefined;
 
          console.log("O valor da primeira nota é:"+nt1)
@@ -89,9 +89,10 @@
          console.log("O valor da quarta nota é:"+nt4)
 
          mp = (nt1*p1+nt2*p2+nt3*p3+nt4*p4)/(p1+p2+p3+p4)
-
+        }
          console.log("O Resultado final da média ponderada é: "+mp)
          alert("A media ponderada é de: "+mp)
+        
         </script>
     </body>
 </html>
