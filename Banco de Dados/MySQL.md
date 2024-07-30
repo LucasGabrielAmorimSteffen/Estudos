@@ -42,3 +42,12 @@ INSERT INTO `trecclientegeral` VALUES(null, "Lucas Gabriel Amorim Steffe", "000.
 ### Order.
 
 * Order By 3 (seria a 3 coluna de uma tabela.)
+
+### Group By
+
+* Select * from trecclientegeral group by id
+
+## Joins
+
+### Inner Join:
+
