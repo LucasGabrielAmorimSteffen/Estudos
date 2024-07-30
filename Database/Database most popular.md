@@ -1,4 +1,4 @@
-# Database most popular
+# Most popular and powerful databases.
 # Bancos de dados mais populares e poderosos.
 
 ## MySQL
