@@ -29,7 +29,7 @@ select
        Tvp.Qtde            AS QTdeVenda,
        Tvp.Qtdedevolvida   AS QTdeDevolvida,
        Tvp.Valorunitarioproduto AS ValorUnitProd,
-       SUM(Tvp.VALORVENDIDO * Tvp.QTDEVENDA) AS TotalVendido,
+       SUM(Tvp.Vendido * Tvp.Qtde) AS TotalVendido,
 
        -- Marca
        tpg.Marca    AS CodigoMarca,
@@ -53,6 +53,34 @@ where PED.EMPRESA = :EMPRESA
   and ped.status = 'EFE'
   and ped.Tipooperacao in ('016','017','025','041')
   and tpg.Marca = :codigomarca
+GROUP BY
+         PED.EMPRESA,
+         PED.CODIGO,
+         PED.CLIENTE,
+         PED.CLIENTENOME,
+         PED.STATUS,
+         PED.DATA,
+         PED.DATAEFE,
+         PED.NUMERONFCE,
+         PED.SERIENFCE,
+         PED.Chavenfce,
+         PED.VALORLIQUIDO, 
+         PED.NFCANCELADA,
+         PED.INUTILIZADA,
+         PED.Denegada,
+         Ped.Valorbruto, 
+         Ped.Valordesconto,
+         Ped.Valorliquido,
+         tpg.Codigo,
+         tvp.Descricaoeditada, 
+         tpg.Descricao, Tvp.Vendido,
+         Tvp.Qtde,
+         Tvp.Qtdedevolvida,
+         Tvp.Valorunitarioproduto, 
+         tpg.Marca,
+         tm.Descricao,
+         Vend.Codigo,
+         Vend.Nome
 
 UNION
 
@@ -88,7 +116,7 @@ select
        Tvp.Qtde            AS QTdeVenda,
        Tvp.Qtdedevolvida   AS QTdeDevolvida,
        Tvp.Valorunitarioproduto AS ValorUnitProd,
-       SUM(Tvp.VALORVENDIDO * Tvp.QTDEVENDA) AS TotalVendido,
+       SUM(Tvp.Vendido * Tvp.Qtde) AS TotalVendido,
 
        -- Marca
        tpg.Marca    AS CodigoMarca,
@@ -108,3 +136,31 @@ where PED.EMPRESA = :EMPRESA
   and ped.status = 'EFE'
   and ped.Tipooperacao in ('016','017','025','041')
   and tpg.Marca = :codigomarca
+GROUP BY
+         PED.EMPRESA,
+         PED.CODIGO,
+         PED.CLIENTE,
+         PED.CLIENTENOME,
+         PED.STATUS,
+         PED.DATA,
+         PED.DATAEFE,
+         PED.NUMERONFCE,
+         PED.SERIENFCE,
+         PED.Chavenfce,
+         PED.VALORLIQUIDO, 
+         PED.NFCANCELADA,
+         PED.INUTILIZADA,
+         PED.Denegada,
+         Ped.Valorbruto, 
+         Ped.Valordesconto,
+         Ped.Valorliquido,
+         tpg.Codigo,
+         tvp.Descricaoeditada, 
+         tpg.Descricao, Tvp.Vendido,
+         Tvp.Qtde,
+         Tvp.Qtdedevolvida,
+         Tvp.Valorunitarioproduto, 
+         tpg.Marca,
+         tm.Descricao,
+         Vend.Codigo,
+         Vend.Nome
