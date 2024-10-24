@@ -1,0 +1,22 @@
+{
+    "sqltools.connections": [
+        {
+            "port": 3050,
+            "firebirdOptions": {
+                "lowercase_keys": false,
+                "role": null,
+                "pageSize": 4096,
+                "retryConnectionInterval": 1000,
+                "blobAsText": false,
+                "encoding": "UTF8"
+            },
+            "previewLimit": 50,
+            "driver": "SQLTools Firebird",
+            "name": "Firebird",
+            "host": "127.0.0.1",
+            "database": "C:\\Ecosis\\dados\\TopTintas.ECO",
+            "username": "SYSDBA",
+            "connectionMethod": "Server and Port"
+        }
+    ]
+}
