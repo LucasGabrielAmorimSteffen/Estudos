@@ -1,35 +1,55 @@
-SELECT
+--TRATAMENTO NFE PEDIDO
+select PED.EMPRESA, 
+       PED.CODIGO as DOCUMENTO, 
+       PED.CLIENTE as CODCLIFOR, 
+       PED.CLIENTENOME as NOMECLIFOR, 
+       PED.STATUS, 
+       PED.DATA, 
+       PED.DATAEFE as DATAEFETIVA, 
+       PED.NOTANFE, 
+       PED.SERIENFE, 
+       PED.NUMERODUNFE as NUMERODANFE, 
+       PED.VALORLIQUIDO as VALOR, 
 
-      -- Empresa
-      Emp.Nomefantasia,
-      Emp.Razaosocial,
-      Emp.Cpfcnpj,
-      Emp.Rgie,
+       PED.NFCANCELADA, 
+       PED.INUTILIZADA, 
+       PED.DENEGADA
+from TVENPEDIDO PED
+where PED.EMPRESA = :EMPRESA
+  and PED.NOTANFE IS NOT NULL
+  and PED.NFDATA between :DATAINICIAL and :DATAFINAL
+  and ped.status = 'EFE'
+  and ped.Tipooperacao in ('016','017','025','041')
 
-      -- Pedido
-      Ped.Codigo           AS CodigoPedido,
-      Ped.Cliente          AS CodigoCliente,
-      Ped.Dataefe          AS DataEfetivacao,
-      Ped.Clientenome      AS NomeCliente,
-      Ped.Clienteendereco  AS EnderecoCliente,
-      Ped.Condicaopagto    AS CondPgtoPed,
-      Ped.Notafiscal       AS NumeroNotaFiscal,
-      Ped.Numerodunfe      AS ChaveNFE,
-      Ped.Vendedor         AS CodigoVendedor,
-
-      -- Produto/Vendedor
-      Prog.Codigo          AS CodigoProduto,
-      Prog.Descricao       AS DescricaoProduto,
-      Prog.Descricaoreduzida,
+UNION
 
 
-      FROM TVenPedido Ped
-Right Join TGerEmpresa Emp
-      ON (Emp.Codigo = Ped.Empresa)
-Inner Join TVenProduto Prod
-      ON (Prod.Pedido = Ped.Codigo)
-Inner Join TEstProdutoGeral Prog
-      ON (Prog.Codigo = Prod.Produto)
-Inner Join TEstMarca Mar
-WHERE Ped.Numerodunfe IS NOT NULL
---AND   Emp.Codigo = :Empresa
+--TRATAMENTO NFCE PEDIDO
+select PED.EMPRESA, 
+       PED.CODIGO as DOCUMENTO, 
+       PED.CLIENTE as CODCLIFOR, 
+       PED.CLIENTENOME as NOMECLIFOR, 
+       PED.STATUS, 
+       PED.DATA, 
+       PED.DATAEFE as DATAEFETIVA, 
+       PED.NUMERONFCE AS NOTANFE,
+       PED.SERIENFCE AS SERIENFE,
+       PED.Chavenfce as NUMERODANFE,
+       PED.VALORLIQUIDO as VALOR, 
+
+       PED.NFCANCELADA, 
+       PED.INUTILIZADA, 
+       PED.DENEGADA,
+       iif(tvp.Descricaoeditada is null, tpg.Descricao, tvp.Descricaoeditada),
+       tpg.Marca,
+       tm.Descricao
+from TVENPEDIDO PED
+inner join tvenproduto tvp on (ped.Empresa = tvp.Empresa and ped.Codigo = tvp.Pedido)
+inner join Testprodutogeral tpg on (tvp.Produto = tpg.Codigo)
+inner join testmarca tm on (tpg.Marca = tm.Codigo)
+where PED.EMPRESA = :EMPRESA
+  AND PED.Chavenfce IS NOT NULL
+  and PED.NFDATA between :DATAINICIAL and :DATAFINAL
+  and ped.status = 'EFE'
+  and ped.Tipooperacao in ('016','017','025','041')
+  and tpg.Marca = :codigomarca
