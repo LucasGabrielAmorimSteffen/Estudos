@@ -15,3 +15,18 @@
 [21:43:40] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
 [21:44:04] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
 [21:44:29] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[05:18:46:12] O Usuário com IP 127.0.0.1 acessou a homepage
+[05:18:46:12] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sexta-feira, 25/10/2024 - 18:47:34] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sexta-feira, 25/10/2024 - 18:47:34] O Usuário com IP 127.0.0.1 acessou a homepage

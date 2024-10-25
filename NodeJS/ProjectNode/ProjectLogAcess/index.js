@@ -5,11 +5,16 @@ const port = 3000;
 
 const getFormattedDate = () => {
     const now = new Date();
+    const daysOfWeek = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+    const dayName = daysOfWeek[now.getDay()];
     const hours = now.getHours().toString().padStart(2, '0');
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const seconds = now.getSeconds().toString().padStart(2, '0');
-    return `${hours}:${minutes}:${seconds}`;
-  };
+    const day = now.getDate().toString().padStart(2, '0');
+    const month = (now.getMonth() + 1).toString().padStart(2, '0');
+    const year = now.getFullYear();
+    return `${dayName}, ${day}/${month}/${year} - ${hours}:${minutes}:${seconds}`;
+};
 
   const server = http.createServer(function(req, res) {
     const currentTime = getFormattedDate();
