@@ -1,0 +1,17 @@
+
+[21:41:49] O Usuário acessou a homepage
+[21:41:49] O Usuário acessou a homepage
+[21:42:14] O Usuário tentou acessar o painel de admin
+[21:42:18] O Usuário acessou a homepage
+[21:42:18] O Usuário acessou a homepage
+[21:43:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[21:43:33] O Usuário com IP 127.0.0.1 acessou a homepage
+[21:43:36] O Usuário com IP 127.0.0.1 acessou a homepage
+[21:43:36] O Usuário com IP 127.0.0.1 acessou a homepage
+[21:43:37] O Usuário com IP 127.0.0.1 acessou a homepage
+[21:43:37] O Usuário com IP 127.0.0.1 acessou a homepage
+[21:43:38] O Usuário com IP 127.0.0.1 acessou a homepage
+[21:43:38] O Usuário com IP 127.0.0.1 acessou a homepage
+[21:43:40] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
+[21:44:04] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
+[21:44:29] O Usuário com IP 127.0.0.1 acessou a homepage
