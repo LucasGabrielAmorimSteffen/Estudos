@@ -1,10 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curriculum de Lucas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Imagens/Fav.png">
+    <style>
+                /* Estilos gerais */
+                body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0c0f14;
+            color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container principal */
+        .container {
+            background-color: #1a1d23;
+            width: 950px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid #00a4ef;
+            color: #e0e0e0;
+        }
+
+        /* Cabeçalho com imagem de perfil e informações */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        /* Imagem de perfil */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #00a4ef;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Informações do perfil */
+        .info {
+            flex: 1;
+        }
+
+        .info h1 {
+            font-size: 2.8rem;
+            color: #00a4ef;
+            margin: 0;
+        }
+
+        .info p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            margin: 5px 0;
+        }
+
+        .info .future {
+            font-size: 1.1rem;
+            color: #00a4ef;
+        }
+
+        /* Seção de bio e objetivos */
+        .bio {
+            margin-top: 20px;
+        }
+
+        .bio p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+
+        .bio p span {
+            font-size: 1.3rem;
+            color: #00a4ef;
+        }
+
+        /* Seção de habilidades e inovação */
+        .skills {
+            margin-top: 40px;
+        }
+
+        .skills h2 {
+            font-size: 1.8rem;
+            color: #00a4ef;
+            margin-bottom: 20px;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .tech-grid img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            filter:  brightness(1.2);
+        }
+
+        /* Projetos visionários */
+        .projects {
+            margin-top: 50px;
+        }
+
+        .projects h2 {
+            font-size: 1.8rem;
+            color: #00a4ef;
+            margin-bottom: 20px;
+        }
+
+        .project-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            border-radius: 10px;
+            background-color: #292d35;
+            border: 1px solid #00a4ef;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 1px solid #00a4ef;
+        }
+
+        .card-content {
+            padding: 20px;
+            color: #e0e0e0;
+        }
+
+        .card-content p {
+            margin: 0;
+        }
+
+        .card-content .visionary {
+            color: #00a4ef;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.7);
+            transform: scale(1.05);
+        }
+
+        /*Experiências profissionais*/
+        
+        .experience {
+            margin-top: 50px;
+        }
+        
+        .experience h2 {
+            font-size: 1.8rem;
+            color: #00a4ef;
+            margin-bottom: 20px;
+        }
+        
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .experience-item {
+            border-radius: 10px;
+            background-color: #292d35;
+            border: 1px solid #00a4ef;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        
+        .experience-item h3 {
+            font-size: 1.4rem;
+            color: #00a4ef;
+            margin: 0 0 10px;
+            cursor: pointer;
+        }
+        
+        .experience-item p {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            margin: 5px 0;
+        }
+        
+        .experience-description {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0;
+        }
+        
+        .experience-description.expanded {
+            max-height: 500px; /*Expansão da section*/
+            padding: 10px 0;
+        }
+
+                  /* Mobile devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .info h1 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .skills, .projects, .experience {
+        margin-top: 30px;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    .project-cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .card img {
+        height: 120px;
+    }
+
+    .experience-list {
+        flex-direction: column;
+    }
+}
+
+/* Tablets (600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+
+    .info h1 {
+        font-size: 2.4rem;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .project-cards {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+a:link {
+    color: #b0b0b0;
+    text-decoration: none;
+ }
+ 
+ /* link que foi visitado */
+ a:visited {
+    color: #b0b0b0;
+ }
+ 
+ /* mouse over */
+ a:hover {
+     color: #00a4ef;
+ }
+ 
+ /* link selecionado */
+ a:active {
+     color: #b0b0b0;
+ }
+    </style>
 </head>
 <body>
-    <h1>Homepage</h1>
+    <div class="container">
+        <div class="header">
+            <div class="profile-pic">
+                <img src="Imagens/Cintura-cima SF.png" alt="Foto de perfil">
+            </div>
+            <div class="info">
+                <h1>Lucas Gabriel Amorim Steffen</h1>
+                <p>Desenvolvedor Backend | 18 anos</p>
+                <p>Meios de contato:</p>
+                <p>WhatsApp: <a href="https://wa.me/5566999045963" target="_blank" class="Links">+55 (66) 99904-5963</a></p>
+                <p>E-mail: <a href="mailto:lucasgabriel.programador@gmail.com">lucasgabriel.programador@email.com</a></p>
+
+                <p class="future">Focado em criar soluções para o futuro.</p>
+                <div class="bio">
+                    <p><span>🚀</span> Apaixonado por inovação e tecnologia.</p>
+                    <p><span>🔧</span> Atualmente desenvolvo em Node.js, JavaScript e MYSQL.</p>
+                    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/lucasteffen/" target="_blank">Lucas Gabriel Amorim Steffen</a></p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>Tecnologias</h2>
+            <div class="tech-grid">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MYSQL">
+                <!--<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">-->
+                <!--<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">-->
+            </div>
+        </div>
+
+        <div class="projects">
+            <h2>Projetos</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="Imagens/Ordem_Templo.png" alt="Imagem do Projeto 1">
+                    <div class="card-content">
+                        <p><strong>Ordem do Templo.</strong></p>
+                        <p>O projeto Ordem do Templo é um projeto sobre a história dos cavaleiros templários durante as cruzadas e idade média, site onde conta
+                            detalhadamente tudo sobre os templários e seus mestres.</p>
+                            <p class="visionary"><a href="https://taupe-sunburst-cafcd7.netlify.app/" target="_blank">Link Site</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="Imagem do Projeto 2">
+                    <div class="card-content">
+                        <p><strong>Projeto 02.</strong></p>
+                        <p>Descrição projeto 02.</p>
+                        <p class="visionary">Informações essenciais.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="Imagem do Projeto 3">
+                    <div class="card-content">
+                        <p><strong>Projeto 03.</strong></p>
+                        <p>Descrição projeto 03.</p>
+                        <p class="visionary">Informações essenciais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience">
+            <h2>Experiência Profissional</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3 class="experience-title">Analista de Suporte Técnico</h3>
+                    <p class="experience-date"><strong>Ecocentauro Sistemas Sinop</strong> | Janeiro 2024 - Presente</p>
+                    <p class="experience-description" style="font-size: 18px;">
+                         • Consultas a Banco de Dados: Desenvolvo consultas SQL em PostgreSQL e MySQL para extrair informações e apoiar a implementação dos sistemas. <br>
+                         <br>
+                         • Desenvolvimento de Relatórios: Colaboro na criação de relatórios detalhados usando ferramentas como Crystal Reports e FastReports, empregando SQL para formatar e apresentar os dados conforme as necessidades dos nossos clientes. <br>
+                         <br>               
+                         • Atendimento ao Cliente: Presto suporte a clientes de diversos segmentos, como agropecuárias, postos de combustíveis, autopeças, lojas de variedades e distribuidoras de oxigênio, esclarecendo dúvidas e oferecendo assistência sobre o ERP de gestão. <br>
+                         <br>
+                         • Suporte ao ERP gestão empresarial: Atendo clientes do sistema EcoGestão, resolvendo dúvidas e solucionando bugs para garantir a operação eficiente do sistema. <br>
+                    </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">Auxiliar Administrativo</h3>
+                    <p class="experience-date"><strong>Autoescola Meridional</strong> | Fevereiro 2023 - Janeiro 2024</p>
+                    <p class="experience-description" style="font-size: 18px;">
+                        • Agendamento de Aulas Práticas: Organizava e agendava as aulas práticas dos alunos, garantindo que todos os horários fossem eficientes e adequados às necessidades dos alunos e instrutores. <br>
+                        <br>
+                        • Coordenação de Testes Práticos: Monitorava o progresso dos alunos para assegurar que todas as aulas práticas necessárias fossem concluídas antes de agendar o teste prático. <br>
+                        <br>
+                        • Processos de Habilitação: Confeccionava e organizava os processos de habilitação dos alunos, preparando a documentação necessária para envio ao Detran e facilitando a emissão da CNH. <br>
+                        <br>
+                        • Recebimento e Entrega de CNHs: Quando as CNHs chegavam à autoescola, era responsável por separar os documentos e combiná-los com os processos de habilitação, além de informar os clientes sobre a chegada de suas carteiras de motorista. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script >
+        window.addEventListener('scroll', () => {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        const cardBottom = card.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+
+        if (cardTop < windowHeight - 100 && cardBottom > 100) {
+            card.classList.add('visible');
+        } else {
+            card.classList.remove('visible');
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const experienceTitles = document.querySelectorAll('.experience-title');
+
+    experienceTitles.forEach(title => {
+        title.addEventListener('click', () => {
+            const description = title.nextElementSibling.nextElementSibling;
+            if (description.classList.contains('expanded')) {
+                description.classList.remove('expanded');
+            } else {
+                // Fechar todas as outras descrições abertas
+                document.querySelectorAll('.experience-description.expanded').forEach(desc => {
+                    desc.classList.remove('expanded');
+                });
+                description.classList.add('expanded');
+            }
+        });
+    });
+});
+    </script>
 </body>
+</html>

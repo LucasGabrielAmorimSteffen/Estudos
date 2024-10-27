@@ -21,10 +21,17 @@ const getFormattedDate = () => {
     const userIP = req.socket.remoteAddress || req.connection.remoteAddress;
 
     if (req.url == '/admin') {
-        fs.appendFile('Log.txt', `\n[${currentTime}] O Usuário com IP ${userIP} tentou acessar o painel de admin`, function(err) {
-            if (err) throw err;
-            console.log(`[${currentTime}] LOG GRAVADA COM SUCESSO PARA ACESSO ADMIN! IP: ${userIP}`);
-        });
+
+        fs.readFile('admin.html',function(err,data){
+           fs.appendFile('Log.txt', `\n[${currentTime}] O Usuário com IP ${userIP} tentou acessar o painel de admin`, function(err) {
+             if (err) throw err;
+             console.log(`[${currentTime}] LOG GRAVADA COM SUCESSO PARA ACESSO ADMIN! IP: ${userIP}`);
+         });
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write(data);
+        res.end();
+    })
+
     } else {
         fs.readFile('index.html', function(err, data) {
             fs.appendFile('Log.txt', `\n[${currentTime}] O Usuário com IP ${userIP} acessou a homepage`, function(err) {

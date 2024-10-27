@@ -1,32 +1,49 @@
 
-[21:41:49] O Usuário acessou a homepage
-[21:41:49] O Usuário acessou a homepage
-[21:42:14] O Usuário tentou acessar o painel de admin
-[21:42:18] O Usuário acessou a homepage
-[21:42:18] O Usuário acessou a homepage
-[21:43:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[21:43:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[21:43:36] O Usuário com IP 127.0.0.1 acessou a homepage
-[21:43:36] O Usuário com IP 127.0.0.1 acessou a homepage
-[21:43:37] O Usuário com IP 127.0.0.1 acessou a homepage
-[21:43:37] O Usuário com IP 127.0.0.1 acessou a homepage
-[21:43:38] O Usuário com IP 127.0.0.1 acessou a homepage
-[21:43:38] O Usuário com IP 127.0.0.1 acessou a homepage
-[21:43:40] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
-[21:44:04] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
-[21:44:29] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[22:00:33] O Usuário com IP 127.0.0.1 acessou a homepage
-[05:18:46:12] O Usuário com IP 127.0.0.1 acessou a homepage
-[05:18:46:12] O Usuário com IP 127.0.0.1 acessou a homepage
-[Sexta-feira, 25/10/2024 - 18:47:34] O Usuário com IP 127.0.0.1 acessou a homepage
-[Sexta-feira, 25/10/2024 - 18:47:34] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sexta-feira, 25/10/2024 - 21:19:45] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
+[Sexta-feira, 25/10/2024 - 21:19:45] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sexta-feira, 25/10/2024 - 21:19:58] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sexta-feira, 25/10/2024 - 21:19:58] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sexta-feira, 25/10/2024 - 21:20:02] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
+[Sexta-feira, 25/10/2024 - 21:21:39] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
+[Sábado, 26/10/2024 - 09:14:29] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
+[Sábado, 26/10/2024 - 09:15:13] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:15:13] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:18:36] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:18:36] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:18:36] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:18:36] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:18:36] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:18:36] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:18:47] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:19:09] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:19:09] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:19:09] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:19:09] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:19:09] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:19:09] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:19:19] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:20:32] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
+[Sábado, 26/10/2024 - 09:21:17] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
+[Sábado, 26/10/2024 - 09:24:03] O Usuário com IP 127.0.0.1 tentou acessar o painel de admin
+[Sábado, 26/10/2024 - 09:24:03] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:27:40] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:27:40] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:28:02] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:28:02] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:28:02] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:28:02] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:30:07] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:30:07] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:30:07] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:30:07] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:30:10] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:30:49] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:30:49] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:30:49] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:30:49] O Usuário com IP 127.0.0.1 acessou a homepage
+[Sábado, 26/10/2024 - 09:30:49] O Usuário com IP 127.0.0.1 acessou a homepage
+[Domingo, 27/10/2024 - 18:29:05] O Usuário com IP 127.0.0.1 acessou a homepage
+[Domingo, 27/10/2024 - 18:29:05] O Usuário com IP 127.0.0.1 acessou a homepage
+[Domingo, 27/10/2024 - 18:29:05] O Usuário com IP 127.0.0.1 acessou a homepage
+[Domingo, 27/10/2024 - 18:29:05] O Usuário com IP 127.0.0.1 acessou a homepage
+[Domingo, 27/10/2024 - 18:29:12] O Usuário com IP 127.0.0.1 acessou a homepage
