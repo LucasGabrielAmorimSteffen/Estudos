@@ -16,7 +16,7 @@ const getFormattedDate = () => {
     return `${dayName}, ${day}/${month}/${year} - ${hours}:${minutes}:${seconds}`;
 };
 
-  const server = http.createServer(function(req, res) {
+    const server = http.createServer(function(req, res) {
     const currentTime = getFormattedDate();
     const userIP = req.socket.remoteAddress || req.connection.remoteAddress;
 
