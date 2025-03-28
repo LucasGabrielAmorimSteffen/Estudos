@@ -6,6 +6,7 @@
 </head>
 <body>
     <?php 
+      phpinfo();
       echo 'Utilizando a tag padrão';
     ?>
     <br>

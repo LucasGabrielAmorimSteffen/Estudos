@@ -18,8 +18,8 @@
     <?php
     $texto = 'Curso completo de PHP <br/>';
 
-    //String to Lower
     echo $texto;
+    //String to Lower
     echo strtolower($texto);
 
     //String to Upper
@@ -28,8 +28,13 @@
     //ucfirst
     echo ucfirst($texto);    
 
+    //strlen
+    echo strlen($texto);          
+
     //str_replace
-    echo ucfirst($texto);        
+    echo str_replace('PHP', 'JavaScript', $texto);
+
+    echo substr($texto, 0, 5)
     ?>
 </body>
 </html>

@@ -7,7 +7,7 @@
 <body>
     <?php
     $nome = 'Lucas';
-    $cor  = 'preto';
+    $cor  = 'Branco';
     $idade = 18;
     $hobby = 'estudar PHP';
 

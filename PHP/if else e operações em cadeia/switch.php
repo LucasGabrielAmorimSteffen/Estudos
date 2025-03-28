@@ -25,7 +25,6 @@
             echo 'Caiu no Default';
             break;
     }
-
     ?>
 </body>
 </html>
